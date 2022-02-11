@@ -75,7 +75,7 @@ app.put('/user/admin', async(req, res)=>{
     //   await client.close();
     };
   };
-  run().catch(console.dir);
+ 
 
 
 app.get('/', (req, res) =>{
