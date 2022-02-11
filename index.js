@@ -61,13 +61,7 @@ app.put ('/users', async(req, res)=>{
   res.json(result);
 });
 
-app.put('/user/admin', async(req, res)=>{
-  const user = req.body;
-  const filter = {email: user.email};
-  const upDateDocs = {$set: {role: 'admin'}};
-  const result = await userCallection.updateOne(filter, updataDocs);
-  res.json(result);
-});
+
 
 
     } finally {
